@@ -13,3 +13,47 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+
+  align-items: center;
+  height: 38px;
+
+  /* 1. горизонтальне зміщення тіні */
+  /* 2. вертикальне зміщення тіні */
+  /* 3. розмір розсіювання тіні  */
+  /* 4. колір тіні  */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  height: 38px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 432px;
+  justify-content: space-between;
+}
+
+.auth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 204px;
+}
