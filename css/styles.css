@@ -1,0 +1,15 @@
+body {
+  background-color: #283036;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 108px;
+  margin-right: 108px;
+  margin-top: 26px;
+  margin-bottom: 98px;
+}
+
+/* Знімає стилізацію з <a> */
+a {
+  text-decoration: none;
+  color: inherit;
+}
