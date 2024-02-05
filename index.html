@@ -25,6 +25,8 @@
           <li><a href="./my-collections">my collections</a></li>
           <li><a href="./blog">blog</a></li>
         </ul>
+
+        <!-- Якщо це посилання на інші сторінки, то це у nav. Якщо це відкриває модалку, або будь-яка інша дія на поточній сторінці, то це вже не у nav -->
         <ul class="auth">
           <li><a href="login">login</a></li>
           <li><a href="SignUp">SignUp</a></li>
@@ -33,30 +35,42 @@
     </header>
     <main>
       <section class="hero">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gY3HAo3mubY?si=4DKCn7XqXOLXFdpK"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
         <div>
           <h1>Awesome tools for Designer & Developer.</h1>
           <p>
             Antool is a web collection of information on paid or free Design and
             Development tools
           </p>
+
           <div class="search">
             <button class="btn-search"></button>
           </div>
+
+          <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
+          <div class="socials">
+            <a href="facebook" aria-label="Facebook link">
+              <img src="svg" alt="facebook" />
+            </a>
+
+            <a href="twitter" aria-label="Twitter link">
+              <img src="svg" alt="twitter" />
+            </a>
+
+            <a href="instagram" aria-label="Instagram link">
+              <img src="svg" alt="instagram" />
+            </a>
+          </div>
         </div>
+
         <img src="./images/hero-background" alt="hero-background" />
-        <div class="socials">
-          <a href="facebook">
-            <img src="svg" alt="facebook" />
-          </a>
-
-          <a href="twitter">
-            <img src="svg" alt="twitter" />
-          </a>
-
-          <a href="instagram">
-            <img src="svg" alt="instagram" />
-          </a>
-        </div>
       </section>
 
       <section class="popular">
@@ -181,10 +195,12 @@
             </div>
           </li>
         </ul>
+
         <button type="button">Load More</button>
       </section>
 
       <section class="partners">
+        <h2>Our partners</h2>
         <div>
           <h2>Trusted more than 150+ brand</h2>
           <a href="microsoft"><img src="microsoft" alt="microsoft" /></a>
@@ -284,7 +300,7 @@
 
       <section class="employee">
         <div class="employee-persona">
-          <img src="Ronald Richards" alt="Ronald Richards photo" />
+          <img src="Ronald_Richards" alt="Ronald Richards photo" />
           <div>
             <img
               src="background-persona-name-img"
@@ -321,17 +337,19 @@
         </div>
       </section>
     </main>
+
     <footer class="footer-line">
       <div>
         <a href="./"><img src="./images/logo" alt="logo" /></a>
-        <h3>Copyright 2021. Antools</h3>
+        <p>Copyright 2021. Antools</p>
         <p>
           Antool is a web collection of information on paid or free Design and
           Development tools
         </p>
       </div>
+
       <address>
-        <h3>Contact Us</h3>
+        <p>Contact Us</p>
         <ul>
           <li>
             <a
@@ -380,6 +398,7 @@
           </li>
         </ul>
       </div>
+
       <div>
         <h3>Company Info</h3>
         <ul>
