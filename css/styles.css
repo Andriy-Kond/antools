@@ -1,11 +1,7 @@
 body {
-  background-color: #283036;
-  color: #ffffff;
+  background-color: #1e252b;
+  color: var(--text-title-color);
   font-family: var(--main-font-family);
-  margin-left: 108px;
-  margin-right: 108px;
-  margin-top: 26px;
-  margin-bottom: 98px;
 }
 
 /* Знімає стилізацію з <a> */
@@ -25,6 +21,22 @@ ol {
   --main-font-family: "Poppins", sans-serif;
   --second-family: "Lora", sans-serif;
   --third-family: "Roboto", sans-serif;
+
+  --text-title-color: rgba(255, 255, 255, 0.9);
+  --text-paragraph-color: rgba(255, 255, 255, 0.55);
+  --text-label-color: rgba(255, 255, 255, 0.38);
+  --text-additional-color: rgba(255, 255, 255, 0.78);
+  --text-undertitle-color: rgba(255, 165, 55, 0.55);
+
+  --text-white-color: #fff;
+  --brand-orange-color: #ff6e30;
+  --brand-bg-color: #1e252b;
+  --brand-bg-transparent: #283036; /* ? or rgba(40, 48, 54, 0.6) */
+}
+
+main {
+  padding-left: 108px;
+  padding-right: 108px;
 }
 
 .nav {
@@ -32,12 +44,15 @@ ol {
   flex-direction: row;
   justify-content: space-between;
 
+  margin-top: 26px;
+  padding-left: 108px;
+  padding-right: 108px;
+
   font-weight: 500;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--text-paragraph-color);
 
   align-items: center;
-  height: 38px;
 
   /* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -59,4 +74,49 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   width: 204px;
+  align-items: center;
+}
+
+.sign-up {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 118px;
+  height: 48px;
+  border-radius: 8px;
+
+  background: var(--brand-orange-color);
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-white-color);
+  text-shadow: none;
+}
+
+.footer-line {
+  margin-top: 240px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  position: relative;
+  padding-left: 108px;
+  padding-right: 108px;
+  padding-bottom: 98px;
+}
+
+.footer-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 0px;
+}
+
+.address {
+  font-style: normal;
 }
