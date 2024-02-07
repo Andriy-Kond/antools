@@ -1,10 +1,9 @@
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
 body {
-  font-family: var(--font-main);
-  color: var(--theme-text-color);
-  background-color: var(--theme-bg-color);
-
-  transition: color var(--transition);
+  background-color: #1e252b;
+  color: var(--text-title-color);
+  font-family: var(--main-font-family);
+  font-weight: 500;
 }
 
 body.modal-open {

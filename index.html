@@ -15,6 +15,8 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/project-normalize.css" />
   </head>
   <body>
     <header>
@@ -36,15 +38,15 @@
     </header>
     <main>
       <section class="hero">
-        <div>
-          <h1>Awesome tools for Designer & Developer.</h1>
-          <p>
+        <div class="hero-box">
+          <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
+          <p class="hero-text">
             Antool is a web collection of information on paid or free Design and
             Development tools
           </p>
 
           <div class="search">
-            <button class="btn-search"></button>
+            <button class="btn-search">Search</button>
           </div>
 
           <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
@@ -67,8 +69,8 @@
       </section>
 
       <section class="popular">
-        <h2>Most Popular Tools</h2>
-        <p>
+        <h2 class="section-title">Most Popular Tools</h2>
+        <p class="section-text">
           Tools for the best Designers and Developers most popularly used in the
           world
         </p>
@@ -193,9 +195,9 @@
       </section>
 
       <section class="partners">
-        <h2>Our partners</h2>
+        <h2 class="section-title">Our partners</h2>
         <div>
-          <h2>Trusted more than 150+ brand</h2>
+          <h3>Trusted more than 150+ brand</h3>
           <a href="microsoft"><img src="microsoft" alt="microsoft" /></a>
           <a href="google"><img src="google" alt="google" /></a>
           <a href="slack"><img src="slack" alt="slack" /></a>
@@ -204,9 +206,9 @@
       </section>
 
       <section class="newcomer-tools">
-        <div>
-          <h2>Newcomer Tools</h2>
-          <p>
+        <div class="newcomer-info">
+          <h2 class="section-title">Newcomer Tools</h2>
+          <p class="section-text">
             Wow! see the latest update of the most recommended tools from
             reliable designers and developers
           </p>
@@ -292,6 +294,7 @@
       </section>
 
       <section class="employee">
+        <h2 class="section-title">Employee</h2>
         <div class="employee-persona">
           <img src="Ronald_Richards" alt="Ronald Richards photo" />
           <div>
@@ -321,8 +324,8 @@
       </section>
 
       <section class="join">
-        <h2>Become a contributor?</h2>
-        <p>
+        <h2 class="section-title">Become a contributor?</h2>
+        <p class="section-text">
           Join us and get tips & tricks to become a great Designer and Developer
         </p>
 
@@ -332,7 +335,7 @@
       </section>
     </main>
 
-    <footer class="footer-line">
+    <footer class="footer">
       <div>
         <a href="./"><img src="./images/logo.svg" alt="logo" /></a>
         <p>Copyright 2021. Antools</p>
