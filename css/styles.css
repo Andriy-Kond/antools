@@ -116,6 +116,11 @@ a {
 
 .hero-text {
   margin-top: 30px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-paragraph-color);
 }
 .search {
   margin-top: 60px;
@@ -150,7 +155,7 @@ a {
 .section-text {
   font-size: 18px;
   line-height: 1.67;
-  /* margin-top: 30px; */
+  margin-top: 30px;
 
   text-align: center;
   color: var(--text-paragraph-color);
