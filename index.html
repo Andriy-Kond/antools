@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav container">
+    <header class="container">
+      <nav class="nav">
         <a href="./" class="logo"><img src="./images/logo.svg" alt="logo" /></a>
         <ul class="menu">
           <li><a href="./">Home</a></li>
@@ -71,17 +71,17 @@
 
       <section class="popular">
         <h2 class="section-title">Most Popular Tools</h2>
-        <p class="section-text">
+        <p class="section-text section-text--popular">
           Tools for the best Designers and Developers most popularly used in the
           world
         </p>
 
-        <ul class="list-grid">
-          <li>
+        <ul class="popular-grid">
+          <li class="popular-item">
             <div class="card-top-box">
               <img src="figma-img" alt="figma logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Figma</h3>
                 <p class="card-payment">Free</p>
               </div>
             </div>
@@ -97,11 +97,11 @@
             </div>
           </li>
 
-          <li>
+          <li class="popular-item">
             <div class="card-top-box">
               <img src="Sketch-img" alt="Sketch logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Sketch</h3>
                 <p class="card-payment">Trial & Paid</p>
               </div>
             </div>
@@ -117,11 +117,11 @@
             </div>
           </li>
 
-          <li>
+          <li class="popular-item">
             <div class="card-top-box">
               <img src="Visual_Studio_Code-img" alt="Visual Studio Code logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Visual Studio Code</h3>
                 <p class="card-payment">Free</p>
               </div>
             </div>
@@ -137,11 +137,11 @@
             </div>
           </li>
 
-          <li>
+          <li class="popular-item">
             <div class="card-top-box">
-              <img src="Notion-img" alt="Notion logo" />
+              <img src="notion-img" alt="Notion logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Notion</h3>
                 <p class="card-payment">Free & Paid</p>
               </div>
             </div>
@@ -157,11 +157,11 @@
             </div>
           </li>
 
-          <li>
+          <li class="popular-item">
             <div class="card-top-box">
-              <img src="Slack-img" alt="Slack logo" />
+              <img src="slack-img" alt="Slack logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Slack</h3>
                 <p class="card-payment">Free & Paid</p>
               </div>
             </div>
@@ -177,11 +177,11 @@
             </div>
           </li>
 
-          <li>
+          <li class="popular-item">
             <div class="card-top-box">
-              <img src="Invision-img" alt="Invision logo" />
+              <img src="invision-img" alt="Invision logo" />
               <div>
-                <h3 class="card-title"></h3>
+                <h3 class="card-title">Invision</h3>
                 <p class="card-payment">Free & Paid</p>
               </div>
             </div>
@@ -202,106 +202,118 @@
       </section>
 
       <section class="partners">
-        <h2 class="section-title">Our partners</h2>
-        <div>
-          <h3>Trusted more than 150+ brand</h3>
-          <a href="microsoft"><img src="microsoft" alt="microsoft" /></a>
-          <a href="google"><img src="google" alt="google" /></a>
-          <a href="slack"><img src="slack" alt="slack" /></a>
-          <a href="workpress"><img src="workpress" alt="workpress" /></a>
-        </div>
+        <h2 class="section-title visually-hidden">Our partners</h2>
+        <h3>Trusted more than 150+ brand</h3>
+        <ul class="partners-list">
+          <li class="partners-item">
+            <a href="microsoft"><img src="microsoft" alt="microsoft" /></a>
+          </li>
+          <li class="partners-item">
+            <a href="google"><img src="google" alt="google" /></a>
+          </li>
+          <li class="partners-item">
+            <a href="slack"><img src="slack" alt="slack" /></a>
+          </li>
+          <li class="partners-item">
+            <a href="workpress"><img src="workpress" alt="workpress" /></a>
+          </li>
+        </ul>
       </section>
 
       <section class="newcomer-tools">
         <div class="newcomer-info">
           <h2 class="section-title">Newcomer Tools</h2>
-          <p class="section-text">
+          <p class="section-text section-text--newcomer">
             Wow! see the latest update of the most recommended tools from
             reliable designers and developers
           </p>
-          <button type="button">Explore more</button>
+          <button type="button" class="btn-newcomer">Explore more</button>
         </div>
-        <ul class="list-grid-newcomer">
-          <li>
-            <a href="Zeplin">
+        <ul class="newcomer-grid">
+          <li class="newcomer-item">
+            <div class="card-top-box">
+              <img src="Zeplin-img" alt="Zeplin logo" />
               <div>
-                <img src="Zeplin-img" alt="Zeplin logo" />
-                <div>
-                  <h3></h3>
-                  <p></p>
-                </div>
+                <h3 class="card-title">Zeplin</h3>
+                <p class="card-payment">Free & Paid</p>
               </div>
-            </a>
-            <div>
-              <div>
+            </div>
+            <p class="card-discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="card-bottom-box">
+              <div class="card-bottom-left-box">
                 <a href="like">like</a>
                 <a href="add">add</a>
               </div>
-              <a href="visit">visit</a>
+              <a href="Zeplin">visit</a>
             </div>
           </li>
 
-          <li>
-            <a href="PHPStorm">
+          <li class="newcomer-item">
+            <div class="card-top-box">
+              <img src="PHPStorm-img" alt="PHPStorm logo" />
               <div>
-                <img src="PHPStorm-img" alt="PHPStorm logo" />
-                <div>
-                  <h3></h3>
-                  <p></p>
-                </div>
+                <h3 class="card-title">PHPStorm</h3>
+                <p class="card-payment">Free</p>
               </div>
-            </a>
-            <div>
-              <div>
+            </div>
+            <p class="card-discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="card-bottom-box">
+              <div class="card-bottom-left-box">
                 <a href="like">like</a>
                 <a href="add">add</a>
               </div>
-              <a href="visit">visit</a>
+              <a href="PHPStorm">visit</a>
             </div>
           </li>
 
-          <li>
-            <a href="Toolbox">
+          <li class="newcomer-item">
+            <div class="card-top-box">
+              <img src="Toolbox-img" alt="Toolbox logo" />
               <div>
-                <img src="Toolbox-img" alt="Toolbox logo" />
-                <div>
-                  <h3></h3>
-                  <p></p>
-                </div>
+                <h3 class="card-title">Toolbox</h3>
+                <p class="card-payment">Free</p>
               </div>
-            </a>
-            <div>
-              <div>
+            </div>
+            <p class="card-discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="card-bottom-box">
+              <div class="card-bottom-left-box">
                 <a href="like">like</a>
                 <a href="add">add</a>
               </div>
-              <a href="visit">visit</a>
+              <a href="Toolbox">visit</a>
             </div>
           </li>
 
-          <li>
-            <a href="Procreate">
+          <li class="newcomer-item">
+            <div class="card-top-box">
+              <img src="Procreate-img" alt="Procreate logo" />
               <div>
-                <img src="Procreate-img" alt="Procreate logo" />
-                <div>
-                  <h3></h3>
-                  <p></p>
-                </div>
+                <h3 class="card-title">Procreate</h3>
+                <p class="card-payment">Paid</p>
               </div>
-            </a>
-            <div>
-              <div>
+            </div>
+            <p class="card-discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="card-bottom-box">
+              <div class="card-bottom-left-box">
                 <a href="like">like</a>
                 <a href="add">add</a>
               </div>
-              <a href="visit">visit</a>
+              <a href="Procreate">visit</a>
             </div>
           </li>
         </ul>
       </section>
 
       <section class="employee">
-        <h2 class="section-title">Employee</h2>
+        <h2 class="section-title visually-hidden">Employee</h2>
         <div class="employee-persona">
           <img src="Ronald_Richards" alt="Ronald Richards photo" />
           <div>
@@ -384,7 +396,7 @@
           </li>
         </ul>
       </address>
-      <div>
+      <div class="Categories">
         <h3>Categories</h3>
         <ul>
           <li>
@@ -408,7 +420,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="info">
         <h3>Company Info</h3>
         <ul>
           <li>
