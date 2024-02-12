@@ -154,6 +154,7 @@ a {
   margin-top: 110px;
 }
 
+/* Popular */
 .popular {
   margin-top: 200px;
 }
@@ -206,6 +207,7 @@ a {
   color: var(--brand-orange-color);
 }
 
+/* Partners */
 .partners {
   margin-top: 200px;
 
@@ -221,6 +223,7 @@ a {
   margin-top: 56px;
 }
 
+/* Newcomer tools */
 .newcomer-tools {
   margin-top: 182px;
   display: flex;
@@ -228,23 +231,12 @@ a {
 }
 
 .newcomer-info {
-  width: 428px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 198px;
-}
-
-.newcomer-grid {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  max-width: 428px;
+  text-align: left;
 }
 
 .section-text--newcomer {
   margin-top: 30px;
-  text-align: left;
 }
 
 .btn-newcomer {
@@ -260,11 +252,20 @@ a {
   background-color: var(--brand-orange-color);
 }
 
+.newcomer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 24px) / 2);
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
 .newcomer-item {
   max-width: 288px;
   padding: 28px 22px;
 }
 
+/* Employee */
 .employee {
   margin-top: 200px;
 }
@@ -273,6 +274,7 @@ a {
   margin-top: 250px;
 }
 
+/* Footer */
 .footer {
   position: relative;
   margin-top: 240px;
@@ -294,4 +296,42 @@ a {
 
 .address {
   font-style: normal;
+}
+
+.e-newcomer-tools {
+  display: flex;
+  justify-content: space-between;
+}
+.e-cont {
+  max-width: 428px;
+}
+.e-title {
+}
+.e-parag {
+}
+.e-btn {
+}
+.e-list {
+  /* width: 600px; */
+  display: flex;
+  flex-basis: calc((100% - 24px) / 2);
+  flex-wrap: wrap;
+
+  gap: 24px;
+}
+.e-item {
+  width: 288px;
+  padding: 22px;
+}
+.e-img {
+}
+.e-left-cont {
+}
+.e-h3 {
+}
+.e-card-cost {
+}
+.e-card-parag {
+}
+.e-card-bottom-cont {
 }
