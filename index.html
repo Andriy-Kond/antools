@@ -44,17 +44,21 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-          <p class="hero-text">
-            Antool is a web collection of information on paid or free Design and
-            Development tools
-          </p>
+          <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
+          <img src="./images/hero-background" alt="hero-background" />
 
-          <div class="search">
-            <button class="btn-search">Search</button>
+          <div class="hero-left">
+            <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
+            <p class="hero-text">
+              Antool is a web collection of information on paid or free Design
+              and Development tools
+            </p>
+
+            <div class="search">
+              <button class="btn-search">Search</button>
+            </div>
           </div>
 
-          <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
           <ul class="socials">
             <li class="socials-item">
               <a href="facebook" aria-label="Facebook link">
@@ -74,13 +78,11 @@
               </a>
             </li>
           </ul>
-
-          <img src="./images/hero-background" alt="hero-background" />
         </div>
       </section>
 
       <section class="popular">
-        <div class="container">
+        <div class="container popular-container">
           <h2 class="section-title">Most Popular Tools</h2>
           <p class="section-text section-text--popular">
             Tools for the best Designers and Developers most popularly used in
@@ -238,7 +240,7 @@
       </section>
 
       <section class="newcomer-tools">
-        <div class="container">
+        <div class="container flex-model">
           <div class="newcomer-info">
             <h2 class="section-title">Newcomer Tools</h2>
 

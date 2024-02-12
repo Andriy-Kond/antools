@@ -72,6 +72,12 @@ a {
   text-align: center;
 }
 
+.flex-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -132,6 +138,11 @@ a {
   padding-top: 104px;
 }
 
+.hero-left {
+  width: 600px;
+  text-align: start;
+}
+
 .hero-text {
   margin-top: 30px;
 
@@ -156,6 +167,8 @@ a {
 
   font-weight: 600;
   font-size: 16px;
+
+  cursor: pointer;
 }
 
 .socials {
@@ -178,6 +191,11 @@ a {
 /* Popular */
 .popular {
   margin-top: 200px;
+}
+
+.popular-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title {
@@ -206,14 +224,18 @@ a {
 
 .popular-grid {
   margin-top: 110px;
+
   display: flex;
   row-gap: 100px;
   column-gap: 24px;
   flex-wrap: wrap;
+
   text-align: start;
 }
 
 .popular-item {
+  flex-basis: calc((100% - 48px) / 3);
+  display: flex;
   max-width: 392px;
   padding: 32px;
 }
@@ -229,6 +251,8 @@ a {
   font-size: 20px;
   background-color: transparent;
   color: var(--brand-orange-color);
+
+  cursor: pointer;
 }
 
 /* Partners */
@@ -250,11 +274,11 @@ a {
 /* Newcomer tools */
 .newcomer-tools {
   margin-top: 182px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .newcomer-info {
+  display: flex;
+  flex-direction: column;
   max-width: 428px;
   text-align: left;
 }
@@ -279,12 +303,13 @@ a {
 .newcomer-grid {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 24px) / 2);
   column-gap: 24px;
   row-gap: 48px;
+  max-width: 600px;
 }
 
 .newcomer-item {
+  flex-basis: calc((100% - 24px) / 2);
   max-width: 288px;
   padding: 28px 22px;
 }
