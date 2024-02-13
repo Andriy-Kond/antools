@@ -90,6 +90,8 @@ a {
 
   align-items: center;
 
+  /* box-shadow: <x-offset> <y-offset> <blur> <spread> <color> */
+  /* box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color> */
   /* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000, 0px 4px 4px var(--shadow);
@@ -190,12 +192,13 @@ a {
 
 /* Popular */
 .popular {
-  margin-top: 200px;
+  padding-top: 200px;
 }
 
 .popular-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
@@ -217,9 +220,6 @@ a {
 .section-text--popular {
   max-width: 428px;
   margin-top: 24px;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .popular-grid {
@@ -234,10 +234,80 @@ a {
 }
 
 .popular-item {
-  flex-basis: calc((100% - 48px) / 3);
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-basis: calc((100% - 48px) / 3);
   max-width: 392px;
   padding: 32px;
+
+  border-radius: 15px;
+}
+
+.popular-item:hover,
+.popular-item:focus {
+  /* backdrop-filter: blur(50px); */
+  /* background: rgba(40, 48, 54, 0.6); */
+
+  filter: blur(50px);
+  background: rgba(255, 110, 48, 0.6);
+  background-position: right 16px top -6px;
+  background-image: radial-gradient(
+    circle at top right,
+    rgba(255, 110, 48, 0.6)
+  );
+  background-size: 65px 65px;
+}
+
+.card-top-box {
+  display: flex;
+}
+
+.popular-item-img {
+  width: 64px;
+  height: 64px;
+}
+
+.card-top-box-right-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.card-title {
+}
+.card-payment {
+}
+.card-discription {
+}
+.card-bottom-box {
+  display: flex;
+  justify-content: space-between;
+}
+.card-bottom-left-box {
+}
+
+.like-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.add-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.visit-icon {
+  width: 106px;
+  height: 42px;
+}
+
+.visit-icon:hover,
+.visit-icon:focus {
+  border-radius: 8px;
+  width: 106px;
+  height: 42px;
+  background-color: var(--brand-orange-color);
 }
 
 .btn-load-more {
