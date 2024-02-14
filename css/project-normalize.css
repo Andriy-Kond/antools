@@ -1,11 +1,4 @@
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
-body {
-  background-color: #1e252b;
-  color: var(--text-title-color);
-  font-family: var(--main-font-family);
-  font-weight: 500;
-}
-
 body.modal-open {
   overflow: hidden;
 }
