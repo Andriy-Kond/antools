@@ -353,11 +353,11 @@ body {
 }
 
 .newcomer-grid {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  max-width: 600px;
+  /* max-width: 600px; */
 }
 
 .newcomer-item {
