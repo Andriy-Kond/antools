@@ -22,9 +22,12 @@
     <header>
       <div class="container">
         <nav class="nav">
-          <a href="./" class="logo">
-            <img src="./images/logo.svg" alt="logo" />
+          <a href="./">
+            <svg class="logo" width="140" height="38">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
           </a>
+
           <ul class="menu">
             <li><a href="./">Home</a></li>
             <li><a href="./categories">Categories</a></li>
@@ -35,7 +38,9 @@
           <!-- Якщо це посилання на інші сторінки, то це у nav. Якщо це відкриває модалку, або будь-яка інша дія на поточній сторінці, то це вже не у nav -->
           <ul class="auth">
             <li><a href="login" class="login">Login</a></li>
-            <li><a href="signup" class="sign-up">Sign Up</a></li>
+            <li>
+              <a href="signup" class="sign-up btn btn--sign-up">Sign Up</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -55,26 +60,40 @@
             </p>
 
             <div class="search">
-              <button class="btn-search">Search</button>
+              <button class="btn-search btn">Search</button>
             </div>
           </div>
 
           <ul class="socials">
             <li class="socials-item">
-              <a href="facebook" aria-label="Facebook link">
-                <img src="svg" class="social-img" alt="facebook" />
+              <a
+                href="facebook"
+                aria-label="Facebook link"
+                class="socials-link"
+              >
+                <svg class="socials-img" width="34" height="34">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
               </a>
             </li>
 
             <li class="socials-item">
-              <a href="twitter" aria-label="Twitter link">
-                <img src="svg" class="social-img" alt="twitter" />
+              <a href="twitter" aria-label="Twitter link" class="socials-link">
+                <svg width="36" height="36">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
               </a>
             </li>
 
             <li class="socials-item">
-              <a href="instagram" aria-label="Instagram link">
-                <img src="svg" class="social-img" alt="instagram" />
+              <a
+                href="instagram"
+                aria-label="Instagram link"
+                class="socials-link"
+              >
+                <svg width="36" height="36">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -297,7 +316,9 @@
             </li>
           </ul>
 
-          <button type="button" class="btn-load-more">Load more</button>
+          <button type="button" class="btn-load-more btn btn--load-more">
+            Load more
+          </button>
         </div>
       </section>
 
@@ -331,7 +352,9 @@
               Wow! see the latest update of the most recommended tools from
               reliable designers and developers
             </p>
-            <button type="button" class="btn-newcomer">Explore more</button>
+            <button type="button" class="btn-newcomer btn btn--explore">
+              Explore more
+            </button>
           </div>
           <ul class="newcomer-grid">
             <li class="newcomer-item">
@@ -541,7 +564,7 @@
           </p>
 
           <div class="join-us">
-            <button class="btn-join-us">Join Us</button>
+            <button class="btn">Join Us</button>
           </div>
         </div>
       </section>

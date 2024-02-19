@@ -20,6 +20,7 @@
 body {
   background-color: var(--brand-bg-color);
   color: var(--text-title-color);
+
   font-family: var(--main-font-family);
 }
 
@@ -49,6 +50,68 @@ body {
   align-items: flex-start;
 }
 
+/* -== btns ==- */
+
+.btn {
+  width: 130px;
+  padding: 12px;
+
+  border-radius: 8px;
+  border: 1px solid var(--brand-orange-color);
+  color: var(--text-white-color);
+  background-color: var(--brand-orange-color);
+
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-white-color);
+
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--brand-orange-color);
+  border: 1px solid var(--brand-orange-color);
+  background-color: var(--text-white-color);
+}
+
+.btn--visit {
+  width: 106px;
+  padding: 9px;
+}
+
+.btn--sign-up {
+  width: 118px;
+}
+
+.btn--explore {
+  width: 198px;
+  padding: 16px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.btn--load-more {
+  width: 184px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--brand-orange-color);
+  background-color: var(--brand-bg-color);
+}
+
+.btn--load-more:hover,
+.btn--load-more:focus {
+  color: var(--text-white-color);
+  border: 1px solid var(--text-white-color);
+  background-color: var(--brand-bg-color);
+}
+
+/* -== /btns ==- */
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -70,6 +133,7 @@ body {
 
 .logo {
   height: 38px;
+  vertical-align: bottom; /* delete 4px in bottom of tag <a> */
 }
 
 .menu {
@@ -89,20 +153,8 @@ body {
 
 .sign-up {
   display: flex;
-
-  align-items: center;
   justify-content: center;
 
-  width: 118px;
-  height: 48px;
-  border-radius: 8px;
-
-  background: var(--brand-orange-color);
-
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--text-white-color);
   text-shadow: none;
 }
 
@@ -129,36 +181,43 @@ body {
   margin-top: 60px;
 }
 
-.btn-search {
-  width: 130px;
-  /* border: 0; */
-  border-radius: 8px;
-  padding: 12px 12px;
-
-  background-color: var(--brand-orange-color);
-  color: var(--text-white-color);
-
-  font-weight: 600;
-  font-size: 16px;
-
-  cursor: pointer;
-}
-
 .socials {
   margin-top: 110px;
   display: flex;
   column-gap: 8px;
 }
 
-/* .social-item,  */
-.social-img {
-  border-radius: 8px;
+.socials-item {
   width: 58px;
   height: 58px;
+  border-radius: 8px;
 
   background: var(--brand-bg-color);
+
+  fill: var(--text-white-color);
+  /* opacity="0.78" */
+  opacity: 0.78;
   /* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
   box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  opacity: 1;
+  fill: var(--brand-orange-color);
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  height: 100%;
+  /* color: green; */
+}
+
+.socials-img {
+  /* fill: currentColor; */
 }
 
 /* Popular */
@@ -294,18 +353,7 @@ body {
 }
 
 .btn-load-more {
-  width: 184px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 18px 18px;
   margin-top: 100px;
-
-  font-weight: 500;
-  font-size: 20px;
-  background-color: transparent;
-  color: var(--brand-orange-color);
-
-  cursor: pointer;
 }
 
 /* Partners */
@@ -340,16 +388,7 @@ body {
 }
 
 .btn-newcomer {
-  width: 198px;
-  border-radius: 8px;
   margin-top: 60px;
-  padding: 16px 16px;
-
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.3;
-  color: var(--text-white-color);
-  background-color: var(--brand-orange-color);
 }
 
 .newcomer-grid {

@@ -32,6 +32,9 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+
+  /* прибрати 4px знизу */
+  /* display: flex;  */
 }
 
 /* Заборона зміну розміру в textarea */
