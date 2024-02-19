@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,10 +10,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet" />
 
     <!-- styles -->
     <link rel="stylesheet" href="./css/modern-normalize-v2.0.0.css" />
@@ -37,9 +36,11 @@
 
           <!-- Якщо це посилання на інші сторінки, то це у nav. Якщо це відкриває модалку, або будь-яка інша дія на поточній сторінці, то це вже не у nav -->
           <ul class="auth">
-            <li><a href="login" class="login">Login</a></li>
             <li>
-              <a href="signup" class="sign-up btn btn--sign-up">Sign Up</a>
+              <a href="login" class="login"> Login </a>
+            </li>
+            <li>
+              <a href="signup" class="sign-up btn btn--sign-up"> Sign Up </a>
             </li>
           </ul>
         </nav>
@@ -52,12 +53,9 @@
           <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
           <img src="./images/hero-background" alt="hero-background" />
 
-          <div class="hero-left">
-            <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-            <p class="hero-text">
-              Antool is a web collection of information on paid or free Design
-              and Development tools
-            </p>
+          <div class="hero-left-box">
+            <h1 class="hero-title">Awesome tools for Designer & Developer<span class="accent">.</span></h1>
+            <p class="hero-text">Antool is a web collection of information on paid or free Design and Development tools</p>
 
             <div class="search">
               <button class="btn-search btn">Search</button>
@@ -66,11 +64,7 @@
 
           <ul class="socials">
             <li class="socials-item">
-              <a
-                href="facebook"
-                aria-label="Facebook link"
-                class="socials-link"
-              >
+              <a href="facebook" aria-label="Facebook link" class="socials-link">
                 <svg class="socials-img" width="34" height="34">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
@@ -86,11 +80,7 @@
             </li>
 
             <li class="socials-item">
-              <a
-                href="instagram"
-                aria-label="Instagram link"
-                class="socials-link"
-              >
+              <a href="instagram" aria-label="Instagram link" class="socials-link">
                 <svg width="36" height="36">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
@@ -103,10 +93,7 @@
       <section class="popular">
         <div class="container popular-container">
           <h2 class="section-title">Most Popular Tools</h2>
-          <p class="section-text section-text--popular">
-            Tools for the best Designers and Developers most popularly used in
-            the world
-          </p>
+          <p class="section-text section-text--popular">Tools for the best Designers and Developers most popularly used in the world</p>
 
           <ul class="popular-grid">
             <li class="popular-item">
@@ -119,9 +106,7 @@
                   <p class="card-payment">Free</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -135,7 +120,7 @@
                     </svg>
                   </button>
                 </div>
-                <button href="visit" class="icon-visit">Visit</button>
+                <a href="visit" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -149,9 +134,7 @@
                   <p class="card-payment">Trial & Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -165,7 +148,7 @@
                     </svg>
                   </button>
                 </div>
-                <button href="Sketch" class="icon-visit">visit</button>
+                <a href="Sketch" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -179,9 +162,7 @@
                   <p class="card-payment">Free</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -195,9 +176,7 @@
                     </svg>
                   </button>
                 </div>
-                <button href="Visual_Studio_Code" class="icon-visit">
-                  visit
-                </button>
+                <a href="Visual_Studio_Code" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -212,9 +191,7 @@
                   <p class="card-payment">Free & Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -228,7 +205,7 @@
                     </svg>
                   </button>
                 </div>
-                <button href="Notion" class="icon-visit">visit</button>
+                <a href="Notion" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -242,9 +219,7 @@
                   <p class="card-payment">Free & Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -258,7 +233,7 @@
                     </svg>
                   </button>
                 </div>
-                <button href="Slack" class="icon-visit">visit</button>
+                <a href="Slack" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -273,9 +248,7 @@
                   <p class="card-payment">Free & Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
                   <button href="like" class="icon">
@@ -289,14 +262,12 @@
                     </svg>
                   </button>
                 </div>
-                <button href="Invision" class="icon-visit">visit</button>
+                <a href="Invision" class="icon-visit"> Visit </a>
               </div>
             </li>
           </ul>
 
-          <button type="button" class="btn-load-more btn btn--load-more">
-            Load more
-          </button>
+          <button type="button" class="btn-load-more btn btn--load-more">Load more</button>
         </div>
       </section>
 
@@ -306,16 +277,24 @@
           <h3>Trusted more than 150+ brand</h3>
           <ul class="partners-list">
             <li class="partners-item">
-              <a href="microsoft"><img src="microsoft" alt="microsoft" /></a>
+              <a href="microsoft">
+                <img src="microsoft" alt="microsoft" />
+              </a>
             </li>
             <li class="partners-item">
-              <a href="google"><img src="google" alt="google" /></a>
+              <a href="google">
+                <img src="google" alt="google" />
+              </a>
             </li>
             <li class="partners-item">
-              <a href="slack"><img src="slack" alt="slack" /></a>
+              <a href="slack">
+                <img src="slack" alt="slack" />
+              </a>
             </li>
             <li class="partners-item">
-              <a href="workpress"><img src="workpress" alt="workpress" /></a>
+              <a href="workpress">
+                <img src="workpress" alt="workpress" />
+              </a>
             </li>
           </ul>
         </div>
@@ -326,13 +305,8 @@
           <div class="newcomer-info">
             <h2 class="section-title">Newcomer Tools</h2>
 
-            <p class="section-text section-text--newcomer">
-              Wow! see the latest update of the most recommended tools from
-              reliable designers and developers
-            </p>
-            <button type="button" class="btn-newcomer btn btn--explore">
-              Explore more
-            </button>
+            <p class="section-text section-text--newcomer">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+            <button type="button" class="btn-newcomer btn btn--explore">Explore more</button>
           </div>
           <ul class="newcomer-grid">
             <li class="newcomer-item">
@@ -346,23 +320,21 @@
                   <p class="card-payment">Free & Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
-                  <a href="like">
+                  <bottom href="like" class="icon">
                     <svg width="28" height="28">
                       <use href="./images/sprite.svg#like"></use>
                     </svg>
-                  </a>
-                  <a href="add">
+                  </bottom>
+                  <bottom href="add" class="icon">
                     <svg width="30" height="30">
                       <use href="./images/sprite.svg#add"></use>
                     </svg>
-                  </a>
+                  </bottom>
                 </div>
-                <a href="Zeplin" class="icon-visit">visit</a>
+                <a href="Zeplin" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -375,23 +347,21 @@
                   <p class="card-payment">Free</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
-                  <a href="like">
+                  <bottom href="like" class="icon">
                     <svg width="28" height="28">
                       <use href="./images/sprite.svg#like"></use>
                     </svg>
-                  </a>
-                  <a href="add">
+                  </bottom>
+                  <bottom href="add" class="icon">
                     <svg width="30" height="30">
                       <use href="./images/sprite.svg#add"></use>
                     </svg>
-                  </a>
+                  </bottom>
                 </div>
-                <a href="PHPStorm" class="icon-visit">visit</a>
+                <a href="PHPStorm" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -404,23 +374,21 @@
                   <p class="card-payment">Free</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
-                  <a href="like">
+                  <bottom href="like" class="icon">
                     <svg width="28" height="28">
                       <use href="./images/sprite.svg#like"></use>
                     </svg>
-                  </a>
-                  <a href="add">
+                  </bottom>
+                  <bottom href="add" class="icon">
                     <svg width="30" height="30">
                       <use href="./images/sprite.svg#add"></use>
                     </svg>
-                  </a>
+                  </bottom>
                 </div>
-                <a href="Toolbox" class="icon-visit">visit</a>
+                <a href="Toolbox" class="icon-visit"> Visit </a>
               </div>
             </li>
 
@@ -432,23 +400,21 @@
                   <p class="card-payment">Paid</p>
                 </div>
               </div>
-              <p class="card-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p class="card-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div class="card-bottom-box">
                 <div class="card-bottom-left-box">
-                  <a href="like">
+                  <button href="like" class="icon">
                     <svg width="28" height="28">
                       <use href="./images/sprite.svg#like"></use>
                     </svg>
-                  </a>
-                  <a href="add">
+                  </button>
+                  <button href="add" class="icon">
                     <svg width="30" height="30">
                       <use href="./images/sprite.svg#add"></use>
                     </svg>
-                  </a>
+                  </button>
                 </div>
-                <a href="Procreate" class="icon-visit">visit</a>
+                <a href="Procreate" class="icon-visit"> Visit </a>
               </div>
             </li>
           </ul>
@@ -462,11 +428,7 @@
             <img src="left-arrow" alt="left arrow" class="left-arrow" />
             <div class="employee-center-box">
               <div class="employee-persona">
-                <img
-                  src="Ronald_Richards"
-                  alt="Ronald Richards photo"
-                  class="employee-img"
-                />
+                <img src="Ronald_Richards" alt="Ronald Richards photo" class="employee-img" />
                 <div class="employee-persona-box">
                   <h3 class="employee-name">Ronald Richards</h3>
                   <p class="employee-position">Product Manager</p>
@@ -475,33 +437,18 @@
               <div class="emploee-description">
                 <p class="quote-mark">“</p>
                 <p class="employee-introduction">
-                  Incididunt cillum do sint sint enim ullamco id deserunt mollit
-                  qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
-                  Do nulla velit labore occaecat do deserunt Lorem magna officia
-                  incididunt consectetur amet. Sunt consectetur veniam minim ex
-                  commodo sint non. Occaecat aute officia excepteur non laboris
-                  id qui ad.
+                  Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do
+                  deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui
+                  ad.
                 </p>
               </div>
             </div>
             <img src="right-arrow" alt="right arrow" class="right-arrow" />
           </div>
           <div class="slider">
-            <img
-              src="previous-position"
-              alt="Previous position"
-              class="previous-position"
-            />
-            <img
-              src="active-position"
-              alt="Active position"
-              class="active-position"
-            />
-            <img
-              src="next-position"
-              alt="Next position"
-              class="next-position"
-            />
+            <img src="previous-position" alt="Previous position" class="previous-position" />
+            <img src="active-position" alt="Active position" class="active-position" />
+            <img src="next-position" alt="Next position" class="next-position" />
           </div>
         </div>
       </section>
@@ -509,10 +456,7 @@
       <section class="join">
         <div class="container">
           <h2 class="section-title">Become a contributor?</h2>
-          <p class="section-text">
-            Join us and get tips & tricks to become a great Designer and
-            Developer
-          </p>
+          <p class="section-text">Join us and get tips & tricks to become a great Designer and Developer</p>
 
           <div class="join-us">
             <button class="btn">Join Us</button>
@@ -521,46 +465,30 @@
       </section>
     </main>
 
-    <footer class="footer container">
-      <div class="container">
-        <div>
-          <a href="./"><img src="./images/logo.svg" alt="logo" /></a>
+    <footer class="footer">
+      <div class="container flex-model">
+        <div class="short-description">
+          <a href="./">
+            <svg width="140" height="38">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
           <p>Copyright 2021. Antools</p>
-          <p>
-            Antool is a web collection of information on paid or free Design and
-            Development tools
-          </p>
+          <p>Antool is a web collection of information on paid or free Design and Development tools</p>
         </div>
 
         <address class="address">
           <p>Contact Us</p>
           <ul>
             <li>
-              <a
-                href="tel:+621987463"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                +621987463
-              </a>
+              <a href="tel:+621987463" target="_blank" rel="noreferrer noopener nofollow"> +621987463 </a>
             </li>
             <li>
-              <a
-                href="maps.google.com"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                M Building, No.10 A
-              </a>
+              <a href="maps.google.com" target="_blank" rel="noreferrer noopener nofollow"> M Building, No.10 A </a>
             </li>
             <li>
-              <a
-                href="mailto:antools@awesome.com"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                antools@awesome.com
-              </a>
+              <a href="mailto:antools@awesome.com" target="_blank" rel="noreferrer noopener nofollow"> antools@awesome.com </a>
             </li>
           </ul>
         </address>
@@ -568,22 +496,10 @@
           <h3>Categories</h3>
           <ul>
             <li>
-              <a
-                href="./design"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                Design
-              </a>
+              <a href="./design" target="_blank" rel="noreferrer noopener nofollow"> Design </a>
             </li>
             <li>
-              <a
-                href="./development"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                Development
-              </a>
+              <a href="./development" target="_blank" rel="noreferrer noopener nofollow"> Development </a>
             </li>
           </ul>
         </div>
@@ -592,31 +508,13 @@
           <h3>Company Info</h3>
           <ul>
             <li>
-              <a
-                href="./about-us"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                About Us
-              </a>
+              <a href="./about-us" target="_blank" rel="noreferrer noopener nofollow"> About Us </a>
             </li>
             <li>
-              <a
-                href="./partners"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                Our Partners
-              </a>
+              <a href="./partners" target="_blank" rel="noreferrer noopener nofollow"> Our Partners </a>
             </li>
             <li>
-              <a
-                href="./blog"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                Blog
-              </a>
+              <a href="./blog" target="_blank" rel="noreferrer noopener nofollow"> Blog </a>
             </li>
           </ul>
         </div>

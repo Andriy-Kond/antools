@@ -41,7 +41,7 @@ body {
   max-width: 1440px;
   padding: 0 108px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .flex-model {
@@ -163,9 +163,18 @@ body {
   padding-top: 104px;
 }
 
-.hero-left {
+.hero-left-box {
   width: 600px;
-  text-align: start;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.4;
+  color: var(--text-title-color);
+}
+.accent {
+  color: var(--brand-orange-color);
 }
 
 .hero-text {
@@ -346,6 +355,9 @@ body {
 }
 
 .icon-visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 106px;
   height: 42px;
   border-radius: 8px;
@@ -405,7 +417,7 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  /* max-width: 600px; */
+  text-align: left;
 }
 
 .newcomer-item {
@@ -556,6 +568,11 @@ body {
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   width: 100%;
   height: 0px;
+}
+
+.short-description {
+  display: flex;
+  flex-direction: column;
 }
 
 .address {
