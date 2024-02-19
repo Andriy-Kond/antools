@@ -324,32 +324,41 @@ body {
   gap: 12px;
 }
 
-.like-icon {
+.icon {
   width: 42px;
   height: 42px;
-}
 
-.add-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: unset;
+  cursor: pointer;
+}
+.icon:hover,
+.icon:focus {
   width: 42px;
   height: 42px;
+  border-radius: 8px;
+
+  box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+  background: var(--brand-bg-transparent);
 }
 
-.visit-icon {
+.icon-visit {
   width: 106px;
   height: 42px;
-  margin-left: auto;
+  border-radius: 8px;
+  background-color: transparent;
 
   font-weight: 600;
   font-size: 16px;
   color: var(--text-paragraph-color);
 }
-
-.visit-icon:hover,
-.visit-icon:focus {
-  border-radius: 8px;
-  width: 106px;
-  height: 42px;
+.icon-visit:hover,
+.icon-visit:focus {
   background-color: var(--brand-orange-color);
+  color: var(--text-white-color);
 }
 
 .btn-load-more {
@@ -403,6 +412,22 @@ body {
   flex-basis: calc((100% - 24px) / 2);
   max-width: 288px;
   padding: 28px 22px;
+}
+
+.bg-icon {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-icon--procreate {
+  background-image: url("../images/procreate.svg");
+}
+.bg-icon--toolbox {
+  background-image: url("../images/toolbox.svg");
+}
+.bg-icon--phpstorm {
+  background-image: url("../images/phpstorm.svg");
 }
 
 /* Employee */
