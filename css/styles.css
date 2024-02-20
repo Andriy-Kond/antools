@@ -127,8 +127,8 @@ body {
   /* box-shadow: <x-offset> <y-offset> <blur> <spread> <color> */
   /* box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color> */
   /* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000, 0px 4px 4px var(--shadow);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,
+    0px 4px 4px var(--shadow);
 }
 
 .logo {
@@ -260,6 +260,8 @@ body {
 .section-text--popular {
   max-width: 428px;
   margin-top: 24px;
+
+  text-align: center;
 }
 
 .popular-grid {
@@ -379,10 +381,27 @@ body {
 
 /* Partners */
 .partners {
+}
+
+.container-partners {
+  max-width: 1224px;
+  /* margin-left: auto;
+  margin-right: auto; */
+
   padding-top: 56px;
   padding-bottom: 56px;
   padding-left: 82px;
   padding-right: 82px;
+
+  border-radius: 25px;
+  background: rgba(44, 53, 61, 0.2);
+  text-align: center;
+}
+
+.partners-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .partners-list {
@@ -413,6 +432,7 @@ body {
 }
 
 .newcomer-grid {
+  max-width: 600px;
   display: inline-flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -513,11 +533,7 @@ body {
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 250px;
-  background: linear-gradient(
-    235deg,
-    rgba(252, 252, 252, 0) 0%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+  background: linear-gradient(235deg, rgba(252, 252, 252, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
