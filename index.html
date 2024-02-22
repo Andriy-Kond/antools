@@ -24,23 +24,23 @@
     <header>
       <div class="container">
         <nav class="nav">
-          <a href="./" aria-label="Company's logo">
+          <a href="./" aria-label="Company's logo" class="link-logo">
             <svg class="logo" width="140" height="38">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
 
           <ul class="menu">
-            <li><a href="./">Home</a></li>
-            <li><a href="./categories">Categories</a></li>
-            <li><a href="./my-collections">My Collections</a></li>
-            <li><a href="./blog">Blog</a></li>
+            <li><a class="item-link" href="./">Home</a></li>
+            <li><a class="item-link" href="./categories">Categories</a></li>
+            <li><a class="item-link" href="./my-collections">My Collections</a></li>
+            <li><a class="item-link" href="./blog">Blog</a></li>
           </ul>
 
           <!-- Якщо це посилання на інші сторінки, то це у nav. Якщо це відкриває модалку, або будь-яка інша дія на поточній сторінці, то це вже не у nav -->
           <ul class="auth">
             <li>
-              <a href="login" class="login"> Login </a>
+              <a href="login" class="item-link"> Login </a>
             </li>
             <li>
               <a href="signup" class="sign-up btn btn--sign-up"> Sign Up </a>
@@ -52,9 +52,9 @@
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container container--hero">
           <!-- aria-label - обов'язковий підпис, коли є іконка (наприклад, svg) без тексту -->
-          <img src="./images/hero-background" alt="hero-background" />
+          <img class="hero-bg" src="./images/hero-bg.svg" alt="hero-background" width="588" />
 
           <div class="hero-left-box">
             <h1 class="hero-title">
@@ -472,11 +472,19 @@
           <div class="employee-box">
             <h2 class="section-title visually-hidden">Employees</h2>
             <img src="left-arrow" alt="left arrow" class="left-arrow" />
-            <div class="employee-center-box">
-              <div class="employee-persona-introduction">
-                <img src="./images/employee-product-manager.webp" alt="Ronald Richards photo" />
-                <div class="employee-persona-box">
-                  <div class="employee-persona-bg"></div>
+            <div class="employee-inner-box">
+              <div class="persona-introduction">
+                <div class="ellipse-orange"></div>
+                <img
+                  src="./images/employee-product-manager.webp"
+                  alt="Ronald Richards photo"
+                  class="persona-photo"
+                />
+                <div class="persona-box">
+                  <div class="persona-rectangle">
+                    <div class="ellipse-blue"></div>
+                  </div>
+
                   <h3 class="employee-name">Ronald Richards</h3>
                   <p class="employee-position">Product Manager</p>
                 </div>

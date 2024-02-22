@@ -55,6 +55,7 @@ body {
 
 .btn {
   width: 130px;
+  height: 48px;
   padding: 12px;
 
   border-radius: 8px;
@@ -77,6 +78,7 @@ body {
 
 .btn--visit {
   width: 106px;
+  height: 42px;
   padding: 9px;
 }
 
@@ -86,6 +88,7 @@ body {
 
 .btn--explore {
   width: 198px;
+  height: 58px;
   padding: 16px;
 
   font-weight: 500;
@@ -95,6 +98,7 @@ body {
 
 .btn--load-more {
   width: 184px;
+  height: 64px;
   padding: 18px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -151,6 +155,11 @@ body {
   align-items: center;
 }
 
+.item-link:hover,
+.item-link:focus {
+  color: var(--text-white-color);
+}
+
 .sign-up {
   display: flex;
   justify-content: center;
@@ -160,10 +169,22 @@ body {
 
 /* Hero */
 .hero {
-  padding-top: 104px;
+  padding-top: 58px;
+}
+
+.container--hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .hero-left-box {
+  padding-top: 46px;
   width: 600px;
 }
 
@@ -178,6 +199,7 @@ body {
 }
 
 .hero-text {
+  max-width: 488px;
   margin-top: 30px;
 
   font-size: 18px;
@@ -461,12 +483,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.employee-center-box {
+.employee-inner-box {
   display: flex;
 }
 
-.employee-persona-introduction {
+.persona-introduction {
   position: relative;
 }
 
@@ -475,7 +496,7 @@ body {
   height: 492px;
 }
 
-.employee-persona-box {
+.persona-box {
   position: absolute;
   bottom: 30px;
   right: 4px;
@@ -493,11 +514,25 @@ body {
   padding-bottom: 16px;
   padding-left: 22px;
   padding-right: 22px;
-
-  /* backdrop-filter: blur(50px); */
-  /* background: rgba(40, 48, 54, 0.2); */
 }
-.employee-persona-bg {
+
+.persona-photo {
+  opacity: 90%;
+}
+
+.ellipse-orange {
+  position: absolute;
+  z-index: -1;
+  right: 56px;
+  bottom: 76px;
+
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: rgba(255, 110, 48, 0.7);
+  filter: blur(35px);
+}
+.persona-rectangle {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -505,9 +540,24 @@ body {
   width: 100%;
   height: 100%;
 
-  filter: blur(4px);
+  opacity: 95%;
+  filter: blur(1px);
   background-color: rgba(40, 48, 54, 0.95);
+
+  overflow: hidden;
 }
+.ellipse-blue {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #007acc;
+  filter: blur(20px);
+}
+
 .employee-name {
   z-index: 1;
   font-weight: 500;
