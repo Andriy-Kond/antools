@@ -486,16 +486,28 @@ body {
 .employee-inner-box {
   display: flex;
 }
-
 .persona-introduction {
   position: relative;
 }
 
-.employee-img {
-  width: 392px;
-  height: 492px;
+.persona-introduction::after {
+  /* ellipse-orange */
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 56px;
+  bottom: 76px;
+
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: rgba(255, 110, 48, 0.7);
+  filter: blur(35px);
 }
 
+.persona-photo {
+  opacity: 90%;
+}
 .persona-box {
   position: absolute;
   bottom: 30px;
@@ -515,23 +527,6 @@ body {
   padding-left: 22px;
   padding-right: 22px;
 }
-
-.persona-photo {
-  opacity: 90%;
-}
-
-.ellipse-orange {
-  position: absolute;
-  z-index: -1;
-  right: 56px;
-  bottom: 76px;
-
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: rgba(255, 110, 48, 0.7);
-  filter: blur(35px);
-}
 .persona-rectangle {
   position: absolute;
   z-index: 0;
@@ -546,7 +541,10 @@ body {
 
   overflow: hidden;
 }
-.ellipse-blue {
+
+.persona-rectangle::after {
+  /* ellipse-blue */
+  content: "";
   position: absolute;
   bottom: -15px;
   right: -15px;
