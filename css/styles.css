@@ -15,6 +15,9 @@
   --brand-bg-transparent: #283036; /* ? or rgba(40, 48, 54, 0.6) */
 
   --shadow: rgba(0, 0, 0, 0.25);
+
+  --transition-color-bg-color: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  --transition-transform-opacity: transform 250ms ease-in-out, opacity 250ms ease-in-out;
 }
 
 body {
@@ -73,7 +76,8 @@ body {
 
   cursor: pointer;
 
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  /* transition: color 250ms ease-in-out, background-color 250ms ease-in-out; */
+  transition: var(--transition-color-bg-color);
 }
 .btn:hover,
 .btn:focus {
@@ -243,7 +247,8 @@ body {
   fill: var(--text-white-color);
   opacity: 0.78;
 
-  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+  /* transition: transform 250ms ease-in-out, opacity 250ms ease-in-out; */
+  transition: var(--transition-transform-opacity);
 }
 
 .socials-link:hover,
@@ -388,7 +393,8 @@ body {
   font-size: 16px;
   color: var(--text-paragraph-color);
 
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  /* transition: color 250ms ease-in-out, background-color 250ms ease-in-out; */
+  transition: var(--transition-color-bg-color);
 }
 .icon-visit:hover,
 .icon-visit:focus {
@@ -430,7 +436,8 @@ body {
 
 .partners-link {
   opacity: 20%;
-  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+  /* transition: transform 250ms ease-in-out, opacity 250ms ease-in-out; */
+  transition: var(--transition-transform-opacity);
 }
 .partners-link:hover,
 .partners-link:focus {
@@ -646,6 +653,8 @@ body {
 
 .join-us {
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .section-text--join {
