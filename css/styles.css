@@ -310,18 +310,33 @@ body {
   flex-basis: calc((100% - 48px) / 3);
   max-width: 392px;
   padding: 32px;
+
+  border-radius: 15px;
+
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
 .popular-item:hover,
 .popular-item:focus,
 .newcomer-item:hover,
 .newcomer-item:focus {
-  border-radius: 15px;
-  background: rgba(40, 48, 54, 0.6);
+  background-color: rgba(40, 48, 54, 0.6);
+}
+
+.popular-item:hover .brand-icon,
+.popular-item:focus .brand-icon,
+.newcomer-item:hover .brand-icon,
+.newcomer-item:focus .brand-icon {
+  transform: scale(1.15);
 }
 
 .card-top-box {
   display: flex;
+  perspective: 600px;
+}
+
+.brand-icon {
+  transition: transform 250ms ease-in-out;
 }
 
 .card-item-img {
@@ -482,6 +497,8 @@ body {
   flex-basis: calc((100% - 24px) / 2);
   max-width: 288px;
   padding: 28px 22px;
+
+  border-radius: 15px;
 }
 
 .bg-icon {
