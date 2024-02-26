@@ -217,6 +217,38 @@ body {
 
 .search {
   margin-top: 60px;
+
+  stroke: var(--text-label-color);
+}
+
+.search-box {
+  position: relative;
+}
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0px;
+
+  transform: translateY(-50%);
+}
+
+.search-icon {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 18px;
+
+  transform: translateY(-50%);
+}
+
+.search-input {
+  border-radius: 15px;
+  width: 497px;
+  height: 64px;
+  background-color: var(--brand-bg-transparent);
+  color: var(--text-label-color);
+
+  padding-left: 56px;
 }
 
 .socials {
@@ -234,7 +266,9 @@ body {
   background: var(--brand-bg-color);
 
   /* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
-  box-shadow: 0px 4px 4px #000;
+  box-shadow: 0px 4px 4px #14191d;
+
+  transition: box-shadow 250ms ease-in-out;
 }
 
 .socials-link {
@@ -251,10 +285,15 @@ body {
   transition: var(--transition-transform-opacity);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials-item:hover .socials-link,
+.socials-item:focus .socials-link {
   opacity: 1;
   transform: scale(1.2);
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  box-shadow: 0px 6px 4px #14191d;
 }
 
 /* Popular */
