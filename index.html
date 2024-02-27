@@ -75,6 +75,10 @@
                 id="search-tools"
                 type="text"
                 placeholder="find more than 430+ tools..."
+                required
+                minlength="3"
+                pattern="^[a-zA-Zа-яА-ЯіІїЇ']+$"
+                title="Мають бути символи латиниці або кирилиці"
               />
               <button type="submit" class="btn search-btn">Search</button>
             </form>
@@ -633,8 +637,10 @@
                 class="join-input"
                 name="join"
                 id="join-tools"
-                type="text"
+                type="email"
                 placeholder="Enter your email..."
+                required
+                minlength="3"
               />
 
               <button type="submit" class="btn join-btn">Join Us</button>
@@ -673,7 +679,7 @@
             </li>
             <li>
               <a
-                href="maps.google.com"
+                href="https://www.google.com/maps/place/salou"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
                 class="item-link"
