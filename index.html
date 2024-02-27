@@ -64,7 +64,7 @@
               Antool is a web collection of information on paid or free Design and Development tools
             </p>
 
-            <form class="search">
+            <form class="search-form">
               <svg width="24" height="24" class="search-icon">
                 <use href="./images/sprite.svg#search"></use>
               </svg>
@@ -76,7 +76,7 @@
                 type="text"
                 placeholder="find more than 430+ tools..."
               />
-              <button type="submit" class="btn btn-search">Search</button>
+              <button type="submit" class="btn search-btn">Search</button>
             </form>
           </div>
 
@@ -627,9 +627,18 @@
               Join us and get tips & tricks to become a great Designer and Developer
             </p>
 
-            <div class="join-us">
-              <button class="btn">Join Us</button>
-            </div>
+            <form class="join-form">
+              <label for="join-tools"></label>
+              <input
+                class="join-input"
+                name="join"
+                id="join-tools"
+                type="text"
+                placeholder="Enter your email..."
+              />
+
+              <button type="submit" class="btn join-btn">Join Us</button>
+            </form>
           </div>
         </div>
       </section>
