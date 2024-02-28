@@ -5,6 +5,9 @@
 
 /* vertical-align: bottom; - delete 4px in bottom of tag <a> */
 
+/* Вибрати чекбокси: .topic-options input[type="checkbox"] */
+/* before, after можна додавати лише на елементи з контентом. Якщо тег одинарний (нема закриваючих дужок - img, input), то в них нема контенту, тому до них застосувати before і after  неможливо. Тому щоби поставити іконку у input треба додавати, наприклад, span з абсолютним позиціонуванням */
+
 :root {
   --main-font-family: "Poppins", sans-serif;
   --second-family: "Lora", sans-serif;

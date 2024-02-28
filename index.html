@@ -68,17 +68,17 @@
               <svg width="24" height="24" class="search-icon">
                 <use href="./images/sprite.svg#search"></use>
               </svg>
-              <label for="search-tools"></label>
+
               <input
                 class="search-input"
                 name="search"
-                id="search-tools"
                 type="text"
                 placeholder="find more than 430+ tools..."
                 required
                 minlength="3"
                 pattern="^[a-zA-Zа-яА-ЯіІїЇ']+$"
                 title="Мають бути символи латиниці або кирилиці"
+                autofocus
               />
               <button type="submit" class="btn search-btn">Search</button>
             </form>
@@ -632,11 +632,9 @@
             </p>
 
             <form class="join-form">
-              <label for="join-tools"></label>
               <input
                 class="join-input"
                 name="join"
-                id="join-tools"
                 type="email"
                 placeholder="Enter your email..."
                 required
