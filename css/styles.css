@@ -731,6 +731,18 @@ body {
   padding-left: 24px;
 }
 
+.join-label {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  transition: transform 250ms ease;
+}
+
+.join-input:focus + .join-label {
+  transform: translateY(-60px);
+}
+
 /*/ Join */
 
 /* ^Footer */
