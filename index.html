@@ -514,11 +514,17 @@
                 autem quidem molestias culpa asperiores fugiat.
               </p>
               <label class="confidence-policy-label">
-                <input class="confidence-policy-input" type="checkbox" />
+                <input class="confidence-policy-input" type="checkbox" data-checkbox-agree />
                 <span class="checkbox-icon"></span>
-                Я погоджуюсь з <a href="">політикою конфіденційності</a>
+                Я погоджуюсь з&#160;<a href="" class="link-accent">політикою конфіденційності</a>
               </label>
-              <button class="btn" data-close-modal>Close</button>
+              <div class="btns-box">
+                <div class="btn-wrapper">
+                  <button class="btn" disabled data-agree-btn>Agree</button>
+                </div>
+                <button class="btn" data-cancel>Cancel</button>
+              </div>
+              <button class="close-cross-btn" data-close-modal></button>
             </div>
           </div>
         </div>
@@ -702,16 +708,32 @@
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
+        closeModalBtnCancel: document.querySelector("[data-cancel]"),
+
+        checkboxAgree: document.querySelector("[data-checkbox-agree]"),
+        agreeBtn: document.querySelector("[data-agree-btn]"),
+
         backdrop: document.querySelector("[data-backdrop]"),
       }
 
       refs.openModalBtn.addEventListener("click", toggleModal)
       refs.closeModalBtn.addEventListener("click", toggleModal)
+      refs.closeModalBtnCancel.addEventListener("click", toggleModal)
+
+      refs.checkboxAgree.addEventListener("click", toggleAgreeBtn)
 
       refs.backdrop.addEventListener("click", logBackdropClick)
 
       function toggleModal() {
         refs.backdrop.classList.toggle("visually-hidden")
+      }
+
+      function toggleAgreeBtn() {
+        if (refs.checkboxAgree.checked) {
+          refs.agreeBtn.removeAttribute("disabled")
+        } else {
+          refs.agreeBtn.setAttribute("disabled", "disabled")
+        }
       }
 
       function logBackdropClick() {
