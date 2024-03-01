@@ -947,7 +947,6 @@ body {
   display: flex;
   gap: 20px;
 }
-
 .close-cross-btn {
   position: absolute;
   top: 10px;
@@ -971,10 +970,10 @@ body {
   scale: 1.2;
 }
 
-/* .btn-wrapper {
-} */
-.btn:disabled {
+.btn-wrapper {
   cursor: not-allowed;
+}
+.btn:disabled {
   pointer-events: none;
   background-color: var(--text-label-color);
 }
