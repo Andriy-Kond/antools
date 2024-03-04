@@ -630,11 +630,11 @@ body {
   justify-content: center;
 }
 
-.employee__introduction {
+.employee__persona {
   position: relative;
 }
 
-.employee__introduction::after {
+.employee__persona::after {
   /*~ ellipse-orange */
   content: "";
   position: absolute;
