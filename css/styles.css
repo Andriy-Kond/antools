@@ -509,7 +509,7 @@ body {
 /*^ Partners */
 .square {
   position: relative;
-  /* z-index: 1; */
+  min-width: 930px;
 
   overflow: hidden;
   border-radius: 25px;
@@ -518,7 +518,6 @@ body {
 .square:before {
   content: "";
   position: absolute;
-  /* z-index: 1; */
 
   top: 0;
   left: 0;
@@ -534,7 +533,6 @@ body {
 
 .partners {
   position: relative;
-  /* z-index: 1; */
   max-width: 1224px;
   padding: 56px 82px;
 
