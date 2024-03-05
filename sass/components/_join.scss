@@ -1,5 +1,5 @@
-/*^ Join */
-.section--join {
+//^ Join
+.section__join {
   padding-top: 150px;
   padding-bottom: 240px;
 }
@@ -10,41 +10,3 @@
 
   text-align: center;
 }
-
-.section__text--join {
-  margin-top: 24px;
-  max-width: 428px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* join form */
-.join-form {
-  position: relative;
-
-  margin-top: 100px;
-  max-width: 100%;
-  min-width: 320px;
-}
-
-.join-form__input {
-  padding-left: 24px;
-}
-
-.join-form__label {
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translateY(-50%);
-  transition: transform 250ms ease, color 250ms ease;
-
-  color: var(--text-label-color);
-
-  /* зсувати label до гори коли... */
-  .join-form__input:focus + &,  /* ...інпут у фокусі */
-  .join-form__input:not(:placeholder-shown) + & /* ...або плейсхолдер не показується */ {
-    transform: translateY(-60px);
-    color: var(--text-title-color);
-  }
-}
-/*/ Join */

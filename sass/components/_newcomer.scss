@@ -1,5 +1,5 @@
-/*^ Newcomer tools */
-.section--newcomer {
+//^ Newcomer tools
+.section__newcomer {
   padding-top: 82px;
 }
 
@@ -17,37 +17,3 @@
 .newcomer__btn {
   margin-top: 60px;
 }
-
-.card-set--newcomer {
-  max-width: 600px;
-  row-gap: 48px;
-}
-
-.card-set__item--newcomer {
-  flex-basis: calc((100% - 24px) / 2);
-}
-
-.tools--newcomer {
-  max-width: 288px;
-  padding: 28px 22px;
-
-  border-radius: 15px;
-  transition: background-image 250ms ease-in-out;
-}
-
-.bg-icon {
-  width: 64px;
-  height: 64px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.bg-icon--procreate {
-  background-image: url("../images/procreate.svg");
-}
-.bg-icon--toolbox {
-  background-image: url("../images/toolbox.svg");
-}
-.bg-icon--phpstorm {
-  background-image: url("../images/phpstorm.svg");
-}
-/*/ Newcomer tools */

@@ -1,32 +1,38 @@
-/* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
-/* box-shadow: <x-offset> <y-offset> <blur> <spread> <color> */
-/* box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color> */
-/* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
+//  text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір>
+//  box-shadow: <x-offset> <y-offset> <blur> <spread> <color>
+//  box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color>
+//  text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір>
 
-/* vertical-align: bottom; - delete 4px in bottom of tag <a> */
+//  vertical-align: bottom; - delete 4px in bottom of tag <a>
 
-/* Вибрати чекбокси: .topic-options input[type="checkbox"] */
-/* before, after можна додавати лише на елементи з контентом. Якщо тег одинарний (нема закриваючих дужок - img, input), то в них нема контенту, тому до них застосувати before і after  неможливо. Тому щоби поставити іконку у input треба додавати, наприклад, span з абсолютним позиціонуванням */
+//  Вибрати чекбокси: .topic-options input[type="checkbox"]
+//  before, after можна додавати лише на елементи з контентом. Якщо тег одинарний (нема закриваючих дужок - img, input), то в них нема контенту, тому до них застосувати before і after  неможливо. Тому щоби поставити іконку у input треба додавати, наприклад, span з абсолютним позиціонуванням
 
-/* outline: 1px solid black; - визначення для візуального орієнтиру */
+//  outline: 1px solid black; - визначення для візуального орієнтиру
 
 @import "./base/modern-normalize-v2.0.0";
 @import "./base/project-normalize";
+@import "./base/common";
 
 @import "./utils/variables";
-@import "./utils/hidden";
+@import "./utils/visually-hidden";
 @import "./utils/flex-model";
-@import "./utils/common";
 @import "./utils/container";
 
 @import "./components/buttons";
 @import "./components/modal";
 @import "./components/header";
 @import "./components/hero";
+@import "./components/search-form";
 @import "./components/socials";
+
 @import "./components/popular";
+@import "./components/card-set";
+
 @import "./components/partners";
 @import "./components/newcomer";
 @import "./components/employee";
 @import "./components/join";
+@import "./components/join-form";
+
 @import "./components/footer";

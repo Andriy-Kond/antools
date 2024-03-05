@@ -1,4 +1,4 @@
-/*^ Employee */
+// ^ Employee
 .employee {
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@
   position: relative;
 
   &::after {
-    /*~ ellipse-orange */
+    // ~ ellipse-orange
     content: "";
     position: absolute;
     z-index: -1;
@@ -61,7 +61,7 @@
   overflow: hidden;
 
   &::after {
-    /*~ ellipse-blue */
+    // ~ ellipse-blue
     content: "";
     position: absolute;
     bottom: -15px;
@@ -132,4 +132,3 @@
   width: 80px;
   height: 100px;
 }
-/*/ Employee */

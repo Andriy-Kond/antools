@@ -1,4 +1,4 @@
-/* ^Footer */
+//^ Footer
 .footer {
   position: relative;
   display: flex;
@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .footer__description-title {
   font-weight: 500;
   font-size: 16px;
@@ -35,10 +36,6 @@
   font-size: 14px;
   line-height: 1.79;
   color: var(--text-paragraph-color);
-}
-
-.address {
-  font-style: normal; /* прибирає нахил за замовчуванням*/
 }
 
 .footer__title {

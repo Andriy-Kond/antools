@@ -1,5 +1,5 @@
-/*^ Hero */
-.section--hero {
+// ^ Hero
+.section__hero {
   padding-top: 58px;
 }
 
@@ -25,6 +25,7 @@
   line-height: 1.4;
   color: var(--text-title-color);
 }
+
 .hero__accent {
   color: var(--brand-orange-color);
 }
@@ -37,51 +38,3 @@
   line-height: 1.67;
   color: var(--text-paragraph-color);
 }
-
-.search-form {
-  position: relative;
-
-  margin-top: 60px;
-  max-width: calc(100% - 102px);
-  min-width: 420px;
-  stroke: var(--text-label-color);
-
-  &::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-
-    background-image: url("../images/search.svg");
-    // background-size: contain;
-    // background-repeat: no-repeat;
-
-    position: absolute;
-    pointer-events: none;
-    top: 50%;
-    left: 18px;
-
-    transform: translateY(-50%);
-  }
-}
-
-.search-form__btn,
-.join-form__btn {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-
-  transform: translateY(-50%);
-}
-
-.search-form__input,
-.join-form__input {
-  width: 100%;
-  height: 64px;
-  border-radius: 15px;
-  background-color: var(--brand-bg-transparent);
-  color: var(--text-label-color);
-
-  padding-left: 56px;
-}
-
-/*/ Hero */

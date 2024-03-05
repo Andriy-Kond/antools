@@ -1,8 +1,4 @@
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
-body.modal-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -32,14 +28,20 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+  vertical-align: bottom;
 
-  /* прибрати 4px знизу */
-  /* display: flex;  */
+  /* deleted 4px in bottom of tag <a> */
+  /* display: flex; або vertical-align:bottom; */
 }
 
 /* Заборона зміну розміру в textarea */
 textarea {
   resize: none;
+}
+
+// прибирає нахил за замовчуванням
+.address {
+  font-style: normal;
 }
 
 /* ========== /СКИДАННЯ СТИЛІВ ========== */

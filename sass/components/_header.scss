@@ -1,4 +1,4 @@
-/*^ Header */
+//^ Header
 .nav {
   display: flex;
   flex-direction: row;
@@ -11,14 +11,12 @@
 
   align-items: center;
 
-  /* box-shadow ? */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,
     0px 4px 4px var(--shadow);
 }
 
 .logo {
   height: 38px;
-  vertical-align: bottom; /* deleted 4px in bottom of tag <a> */
 }
 
 .menu {
@@ -26,19 +24,20 @@
   flex-direction: row;
   justify-content: space-between;
   width: 432px;
+
+  &--auth {
+    width: 204px;
+    align-items: center;
+  }
 }
 
-.menu--auth {
-  width: 204px;
-  align-items: center;
-}
+.menu__link {
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 85%);
+  }
 
-.menu__link:hover,
-.menu__link:focus {
-  color: rgba(255, 255, 255, 85%);
+  &--non-shadow {
+    text-shadow: none;
+  }
 }
-
-.menu__link--non-shadow {
-  text-shadow: none;
-}
-/*/ Header */

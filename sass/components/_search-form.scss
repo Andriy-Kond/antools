@@ -1,0 +1,35 @@
+@import "../utils/placeholders";
+
+.search-form {
+  position: relative;
+
+  margin-top: 60px;
+  max-width: calc(100% - 102px);
+  min-width: 420px;
+  stroke: var(--text-label-color);
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../images/search.svg");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 18px;
+
+    transform: translateY(-50%);
+  }
+}
+
+.search-form__btn {
+  @extend %form__btn;
+}
+
+.search-form__input {
+  @extend %form__input;
+}
