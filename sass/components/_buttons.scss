@@ -20,11 +20,17 @@
   user-select: none;
 
   transition: var(--transition-color-bg-color);
-}
-.btn:hover,
-.btn:focus {
-  color: var(--brand-orange-color);
-  background-color: var(--text-title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--brand-orange-color);
+    background-color: var(--text-title-color);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: var(--text-label-color);
+  }
 }
 
 .btn--visit {
@@ -61,11 +67,11 @@
   background-color: var(--brand-bg-color);
 
   transition: border 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--text-title-color);
+    background-color: var(--brand-bg-color);
+  }
 }
 
-.btn--load-more:hover,
-.btn--load-more:focus {
-  border: 1px solid var(--text-title-color);
-  background-color: var(--brand-bg-color);
-}
 /*/ -== btns ==- */

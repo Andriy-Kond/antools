@@ -6,26 +6,27 @@
 
 .employee__persona {
   position: relative;
-}
 
-.employee__persona::after {
-  /*~ ellipse-orange */
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 56px;
-  bottom: 76px;
+  &::after {
+    /*~ ellipse-orange */
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 56px;
+    bottom: 76px;
 
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: rgba(255, 110, 48, 0.7);
-  filter: blur(35px);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgba(255, 110, 48, 0.7);
+    filter: blur(35px);
+  }
 }
 
 .employee__photo {
   opacity: 90%;
 }
+
 .employee__info-box {
   position: absolute;
   bottom: 30px;
@@ -45,6 +46,7 @@
   padding-left: 22px;
   padding-right: 22px;
 }
+
 .employee__rectangle {
   position: absolute;
   top: 0;
@@ -57,20 +59,20 @@
   background-color: rgba(40, 48, 54, 0.95);
 
   overflow: hidden;
-}
 
-.employee__rectangle::after {
-  /*~ ellipse-blue */
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
+  &::after {
+    /*~ ellipse-blue */
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
 
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  background-color: #007acc;
-  filter: blur(20px);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #007acc;
+    filter: blur(20px);
+  }
 }
 
 .employee__name {
@@ -80,14 +82,17 @@
   letter-spacing: 0.01em;
   color: var(--text-additional-color);
 }
+
 .employee__position {
   z-index: 1;
   font-size: 16px;
   color: var(--text-paragraph-color);
 }
+
 .employee__description {
   position: relative;
 }
+
 .employee__quote-mark {
   position: absolute;
   top: -90px;

@@ -39,13 +39,12 @@
   transition: transform 250ms ease, color 250ms ease;
 
   color: var(--text-label-color);
-}
 
-/* зсувати label до гори коли... */
-.join-form__input:focus + .join-form__label,  /* ...інпут у фокусі */
-.join-form__input:not(:placeholder-shown) + .join-form__label /* ...або плейсхолдер не показується */ {
-  transform: translateY(-60px);
-  color: var(--text-title-color);
+  /* зсувати label до гори коли... */
+  .join-form__input:focus + &,  /* ...інпут у фокусі */
+  .join-form__input:not(:placeholder-shown) + & /* ...або плейсхолдер не показується */ {
+    transform: translateY(-60px);
+    color: var(--text-title-color);
+  }
 }
-
 /*/ Join */

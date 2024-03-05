@@ -22,8 +22,8 @@
     <header>
       <div class="container">
         <nav class="nav">
-          <a href="./" aria-label="Company's logo">
-            <svg class="logo" width="140" height="38">
+          <a href="./" aria-label="Company's logo" class="logo">
+            <svg width="140" height="38">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -531,22 +531,20 @@
             </li>
           </ul>
 
-          <div class="backdrop visually-hidden" data-backdrop>
-            <div class="modal-confidence">
+          <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fuga ea quia,
                 voluptate sed corrupti deserunt delectus consectetur quam culpa nam. Iure esse modi,
                 autem quidem molestias culpa asperiores fugiat.
               </p>
-              <label class="modal-confidence__label">
-                <input class="modal-confidence__input" type="checkbox" data-checkbox-agree />
-                <span class="modal-confidence__checkbox-icon"></span>
-                Я погоджуюсь з&#160;<a href="" class="modal-confidence__accent"
-                  >політикою конфіденційності</a
-                >
+              <label class="modal__label">
+                <input class="modal__input" type="checkbox" data-checkbox-agree />
+                <span class="modal__checkbox-icon"></span>
+                Я погоджуюсь з&#160;<a href="" class="modal__accent">політикою конфіденційності</a>
               </label>
-              <div class="modal-confidence__btns-box">
-                <div class="modal-confidence__btn-wrapper">
+              <div class="modal__btns-box">
+                <div class="modal__btn-wrapper">
                   <button class="btn" disabled data-agree-btn>Agree</button>
                 </div>
                 <button class="btn" data-cancel>Cancel</button>
@@ -758,7 +756,7 @@
       refs.backdrop.addEventListener("click", logBackdropClick)
 
       function toggleModal() {
-        refs.backdrop.classList.toggle("visually-hidden")
+        refs.backdrop.classList.toggle("is-hidden")
       }
 
       function toggleAgreeBtn() {
