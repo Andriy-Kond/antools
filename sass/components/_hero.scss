@@ -1,0 +1,40 @@
+// ^ Hero
+.section__hero {
+  padding-top: 58px;
+}
+
+.container--hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero__left-box {
+  padding-top: 46px;
+  max-width: 600px;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.4;
+  color: var(--text-title-color);
+}
+
+.hero__accent {
+  color: var(--brand-orange-color);
+}
+
+.hero__text {
+  max-width: 488px;
+  margin-top: 30px;
+
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-paragraph-color);
+}

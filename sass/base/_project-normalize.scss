@@ -1,8 +1,4 @@
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
-body.modal-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -43,7 +39,7 @@ textarea {
   resize: none;
 }
 
-/* прибирає нахил за замовчуванням */
+// прибирає нахил за замовчуванням
 .address {
   font-style: normal;
 }

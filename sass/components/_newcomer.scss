@@ -1,0 +1,19 @@
+//^ Newcomer tools
+.section__newcomer {
+  padding-top: 82px;
+}
+
+.newcomer {
+  display: flex;
+  flex-direction: column;
+  max-width: 428px;
+  text-align: left;
+}
+
+.newcomer__section-text {
+  margin-top: 30px;
+}
+
+.newcomer__btn {
+  margin-top: 60px;
+}

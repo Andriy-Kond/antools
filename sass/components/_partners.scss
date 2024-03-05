@@ -1,0 +1,65 @@
+//^ Partners
+.partners {
+  // The pillow for border transparent effect
+  position: relative;
+  min-width: 930px;
+  max-width: 1224px;
+
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+
+  &:before {
+    //~ Red circle at the pillow
+    content: "";
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background-color: rgba(255, 72, 66, 0.4);
+    filter: blur(40px);
+  }
+}
+
+.partners__wrapper {
+  // Gradient of background (padding-box) + Gradient of border (border-box)
+  position: relative; // relative to the pillow (partners)
+  padding: 56px 82px;
+
+  border-radius: 25px;
+
+  border: 2px solid transparent; // on the pillow
+  background-image: linear-gradient(rgba(44, 53, 61, 0.4), rgba(44, 53, 61, 0.4)),
+    linear-gradient(transparent, transparent);
+  background-clip: padding-box, border-box; // встановлює область, в якій будуть відображені градієнти - контент+паддінг та контент+паддін+бордер
+
+  //  один запис для двох властивостей:
+  //  background: linear-gradient(rgba(44, 53, 61, 0.4), rgba(44, 53, 61, 0.4)) padding-box, linear-gradient(to right, rgba(255, 255, 255, 0.01) 20%, transparent 40%) border-box;
+}
+
+.partners__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.partners__link {
+  opacity: 20%;
+  transition: var(--transition-transform-opacity);
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+    scale: 1.2;
+  }
+}
