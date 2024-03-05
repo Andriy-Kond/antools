@@ -1,0 +1,45 @@
+/* ========== СКИДАННЯ СТИЛІВ ==========  */
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Знімає стилізацію з ul */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Знімає стилізацію з <a> */
+a {
+  text-decoration: none;
+  color: inherit;
+
+  /* прибрати 4px знизу */
+  /* display: flex;  */
+}
+
+/* Заборона зміну розміру в textarea */
+textarea {
+  resize: none;
+}
+
+/* ========== /СКИДАННЯ СТИЛІВ ========== */

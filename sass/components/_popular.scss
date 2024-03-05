@@ -1,0 +1,232 @@
+/*^ Popular */
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 48px;
+  line-height: 1.3;
+  font-weight: 500; /* необхідно перебити! */
+
+  color: var(--text-title-color);
+}
+
+.section__text {
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 500;
+
+  color: var(--text-paragraph-color);
+}
+
+.section__text--popular {
+  max-width: 428px;
+  margin-top: 24px;
+
+  text-align: center;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+
+  column-gap: 24px;
+}
+
+.card-set--popular {
+  margin-top: 110px;
+  row-gap: 100px;
+}
+
+.card-set__item {
+  position: relative;
+  min-width: 220px;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.card-set__item::before {
+  /*~ orange circle */
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 16px;
+  width: 65px;
+
+  height: 65px;
+  border-radius: 50%;
+  background-color: rgba(255, 110, 48, 0.8);
+  filter: blur(30px);
+  opacity: 0;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.card-set__item:hover::before,
+.card-set__item:focus::before {
+  opacity: 1;
+}
+
+.tools {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.tools--popular {
+  max-width: 392px;
+  padding: 32px;
+
+  border-radius: 15px;
+
+  transition: background-image 250ms ease-in-out;
+}
+
+.bg-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6)),
+    linear-gradient(transparent, transparent);
+  background-clip: padding-box, border-box;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0;
+}
+.card-set__item:hover .bg-hover,
+.card-set__item:focus .bg-hover {
+  opacity: 1;
+}
+
+.tools__top-box {
+  display: flex;
+  perspective: 600px;
+  align-items: flex-start;
+}
+
+.brand-icon {
+  transition: transform 250ms ease-in-out;
+}
+.card-set__item:hover .brand-icon,
+.card-set__item:focus .brand-icon {
+  transform: scale(1.15);
+}
+
+.card-item-img {
+  width: 64px;
+  height: 64px;
+}
+
+.tools__top-box-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.tools__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-additional-color);
+
+  white-space: nowrap;
+}
+.tools__payment {
+  margin-top: 4px;
+
+  font-size: 18px;
+  color: #ffa537;
+}
+.tools__description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-paragraph-color);
+}
+
+.card-set__item:hover .tools__description,
+.card-set__item:focus .tools__description {
+  color: var(--text-additional-color);
+}
+
+.tools__bottom-box {
+  display: flex;
+  justify-content: space-between;
+}
+.tools__bottom-box-left {
+  display: flex;
+  gap: 12px;
+}
+
+.tools__icon-like,
+.tools__icon-add {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: unset;
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.tools__icon-like:hover,
+.tools__icon-like:focus,
+.tools__icon-add:hover,
+.tools__icon-add:focus {
+  box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 95%);
+  background-color: var(--brand-bg-transparent);
+}
+
+.tools__icon-like:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+
+  background-image: url("../images/like.svg");
+}
+
+.tools__icon-add:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../images/add.svg");
+}
+
+.tools__icon-visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-paragraph-color);
+
+  transition: var(--transition-color-bg-color);
+}
+.tools__icon-visit:hover,
+.tools__icon-visit:focus {
+  background-color: var(--brand-orange-color);
+  color: var(--text-white-color);
+}
+
+/*/ Popular */

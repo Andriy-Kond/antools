@@ -1,0 +1,66 @@
+/*^ Partners */
+.partners {
+  /* The pillow */
+  position: relative;
+  min-width: 930px;
+  max-width: 1224px;
+
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.partners:before {
+  /*~ Red circle */
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  filter: blur(40px);
+  background-color: rgba(255, 72, 66, 0.4);
+}
+
+.partners__wrapper {
+  /* Gradient of background (padding-box) + Gradient of border (border-box) */
+  position: relative;
+  padding: 56px 82px;
+
+  border: 2px solid transparent;
+
+  background-image: linear-gradient(rgba(44, 53, 61, 0.4), rgba(44, 53, 61, 0.4)),
+    linear-gradient(transparent, transparent);
+  background-clip: padding-box, border-box; /* встановлює область, в якій будуть відображені градієнти */
+
+  /* один запис для двох властивостей:  */
+  /* background: linear-gradient(rgba(44, 53, 61, 0.4), rgba(44, 53, 61, 0.4)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.01) 20%, transparent 40%) border-box; */
+  border-radius: 25px;
+}
+
+.partners__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.partners__link {
+  opacity: 20%;
+  transition: var(--transition-transform-opacity);
+}
+.partners__link:hover,
+.partners__link:focus {
+  opacity: 60%;
+  scale: 1.2;
+}
+/*/ Partners */
