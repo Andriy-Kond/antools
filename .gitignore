@@ -128,3 +128,6 @@ dist
 
 # non-optimized images
 /images/non-optimized
+
+#.vscode settings
+/vscode
