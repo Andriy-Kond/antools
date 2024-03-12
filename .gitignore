@@ -130,4 +130,4 @@ dist
 /images/non-optimized
 
 #.vscode settings
-/vscode
+.vscode
